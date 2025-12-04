@@ -21,3 +21,14 @@ This project builds a full volatility-forecasting pipeline for BTCUSDT 15-minute
 - **CNN-LSTM + MTF achieves the best multi-day performance**, capturing richer temporal structure
 
 ## 📁 Project Structure
+data/ # processed + raw Binance data
+models/ # HAR, GARCH, LSTM, CNN-LSTM code
+download_binance.py # bulk Binance K-lines downloader
+load_binance.py # preprocess + build RV features
+
+## 🚀 Usage
+```bash
+python3 -m models.har_model
+python3 -m models.garch_model
+python3 -m models.lstm_model
+python3 -m models.cnn_lstm_mtf
