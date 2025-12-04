@@ -22,8 +22,11 @@ This project builds a full volatility-forecasting pipeline for BTCUSDT 15-minute
 
 ## 📁 Project Structure
 data/ # processed + raw Binance data
+
 models/ # HAR, GARCH, LSTM, CNN-LSTM code
+
 download_binance.py # bulk Binance K-lines downloader
+
 load_binance.py # preprocess + build RV features
 
 ## 🚀 Usage
